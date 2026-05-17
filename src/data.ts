@@ -3,7 +3,7 @@ import type { DataList } from "./types";
 export const knocks100Data: DataList[] = [
   // === 初級 (1 - 35) ===
   { id: 1, title: "デジタル時計", level: "easy", desc: "現在時刻を1秒ごとに更新して表示する。12時間表記と24時間表記を切り替えるボタンも実装せよ。" },
-  { id: 2, title: "ストップウ７８ォッチ", level: "easy", desc: "スタート、ストップ、ラップタイム計測、リセット機能を備えたミリ秒単位のタイマー。" },
+  { id: 2, title: "ストップウォッチ", level: "easy", desc: "スタート、ストップ、ラップタイム計測、リセット機能を備えたミリ秒単位のタイマー。" },
   { id: 3, title: "カウントダウンタイマー", level: "easy", desc: "ユーザーが指定した分・秒からカウントダウンし、0になったらアラーム音や画面フラッシュで通知する。" },
   { id: 4, title: "シンプルな電卓", level: "easy", desc: "画面上のボタンクリック、またはキーボード入力で、加減乗除の計算ができるUIを実装せよ。" },
   { id: 5, title: "Todoリスト", level: "easy", desc: "タスクの追加、完了チェック、削除、および全削除ができる。データはlocalStorageに保存すること。" },
