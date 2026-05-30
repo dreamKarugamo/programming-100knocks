@@ -7,6 +7,8 @@
     --accent-hover: #7dd3fc;
     --border-color: #3f3f46;
     --success: #4ade80;
+    --danger: #ef4444;
+    --danger-hover: #f87171;
 }
 
 * {
@@ -46,7 +48,7 @@ header p {
     font-size: 1.1rem;
 }
 
-/* --- ダッシュボード / ガチャ --- */
+/* --- ダッシュボード / ガチャ / アクション --- */
 .dashboard {
     background-color: var(--card-bg);
     border: 2px solid var(--border-color);
@@ -85,23 +87,53 @@ header p {
     transition: width 0.3s ease;
 }
 
+/* ボタン配置用コンテナ */
+.dashboard-actions {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .btn {
-    background-color: var(--accent);
-    color: #000000;
     border: none;
     padding: 12px 24px;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.2s;
-    width: 100%;
-    max-width: 300px;
+    transition: background-color 0.2s, transform 0.1s;
     text-align: center;
+    flex: 1;
+    min-width: 160px;
+    max-width: 260px;
 }
 
-.btn:hover {
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* ガチャボタン個別スタイル */
+.btn-gacha {
+    background-color: var(--accent);
+    color: #000000;
+}
+
+.btn-gacha:hover {
     background-color: var(--accent-hover);
+}
+
+/* 全消去ボタン個別スタイル */
+.btn-clear {
+    background-color: transparent;
+    color: var(--danger);
+    border: 2px solid var(--danger);
+}
+
+.btn-clear:hover {
+    background-color: var(--danger);
+    color: #ffffff;
 }
 
 /* --- フィルター --- */
